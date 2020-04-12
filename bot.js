@@ -20,7 +20,7 @@ bot.on('message', message => {
         case 'not':
             var p="",z="",o="",l="",u="",k="";
             var test = "";
-            for(var i=0; i<args.length;i++)
+            for(var i=0; i<args.length/2;i++)
             {
                 test += test + " ";
             }
