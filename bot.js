@@ -20,7 +20,7 @@ bot.on('message', message => {
         case 'not':
             var p="",z="",o="",l="",u="",k="";
 
-            for(var i=0; i<args.length();i++)
+            for(var i=0; i<args.length;i++)
             {
                 if(args[i]="P:")
                 {
@@ -59,7 +59,7 @@ bot.on('message', message => {
                 }
                 if(args[i]="K:")
                 {
-                    if(i<args.length())
+                    if(i<args.length)
                     {
                         k= k + args[i+1];
                     }
