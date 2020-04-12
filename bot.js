@@ -23,7 +23,31 @@ bot.on('message', message => {
            
             for(var i=0; i<args.length;i++)
             {
-                message.channel.sendMessage("XD");
+                if(args[i]="P")
+                {
+                    pp=i;
+                }
+                if(args[i]="Z")
+                {
+                    zp=i;
+                }
+                if(args[i]="O")
+                {
+                    op=i;
+                }
+                if(args[i]="L")
+                {
+                    lp=i;
+                }
+                if(args[i]="U")
+                {
+                    up=i;
+                }
+                if(args[i]="K")
+                {
+                    kp=i;
+                }
+
             }
 
             for(var i=pp+1; i<zp;i++)
@@ -51,13 +75,13 @@ bot.on('message', message => {
                 k = k +" " + args[i];
             }
            
-          /*  message.channel.sendMessage(p);
+            message.channel.sendMessage(p);
             message.channel.sendMessage(z);
             message.channel.sendMessage(o);
             message.channel.sendMessage(l);
             message.channel.sendMessage(u);
             message.channel.sendMessage(k);
-            var exampleEmbed = new Discord.RichEmbed()
+            /*var exampleEmbed = new Discord.RichEmbed()
             .setColor('#A40000')
             .setTitle('Typ akcji:  '+ p)
             .setDescription(` ** Zgłaszający: ** ${z} \n ** Opis zdarzenia: **  ${o}  `)
