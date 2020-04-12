@@ -52,7 +52,7 @@ bot.on('message', message => {
 
             for(var i=pp+1; i<zp;i++)
             {
-                p = p +" " + args[i];
+                p = p +" "+ args[i];
             }
             for(var i=zp+1; i<op;i++)
             {
@@ -75,12 +75,12 @@ bot.on('message', message => {
                 k = k +" " + args[i];
             }
            
-            message.channel.sendMessage(p);
-            message.channel.sendMessage(z);
-            message.channel.sendMessage(o);
-            message.channel.sendMessage(l);
-            message.channel.sendMessage(u);
-            message.channel.sendMessage(k);
+            message.channel.sendMessage(pp);
+            message.channel.sendMessage(zp);
+            message.channel.sendMessage(op);
+            message.channel.sendMessage(lp);
+            message.channel.sendMessage(up);
+            message.channel.sendMessage(kp);
             /*var exampleEmbed = new Discord.RichEmbed()
             .setColor('#A40000')
             .setTitle('Typ akcji:  '+ p)
