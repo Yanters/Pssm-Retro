@@ -19,19 +19,69 @@ bot.on('message', message => {
     switch (args[0]) {
         case 'not':
             var p="",z="",o="",l="",u="",k="";
-            var test = "";
-            for(var i=0; i<args.length/2;i++)
+            var pp=0,zp=0,op=0,lp=0,up=0,kp=0;
+           
+            for(var i=0; i<args.length;i++)
             {
-                test += test + " ";
+                if(args[i]="P:")
+                {
+                    pp=i;
+                }
+                if(args[i]="Z:")
+                {
+                    zp=i;
+                }
+                if(args[i]="O:")
+                {
+                    op=i;
+                }
+                if(args[i]="L:")
+                {
+                    lp=i;
+                }
+                if(args[i]="U:")
+                {
+                    up=i;
+                }
+                if(args[i]="K:")
+                {
+                    kp=i;
+                }
+
             }
-            message.channel.sendMessage(test);
-           /* message.channel.sendMessage(p);
+
+            for(var i=pp+1; i<zp;i++)
+            {
+                p = p +" " + args[i];
+            }
+            for(var i=zp+1; i<op;i++)
+            {
+                z = z +" " + args[i];
+            }
+            for(var i=op+1; i<lp;i++)
+            {
+                o = o +" " + args[i];
+            }
+            for(var i=lp+1; i<up;i++)
+            {
+                l = l +" " + args[i];
+            }
+            for(var i=up+1; i<kp;i++)
+            {
+                u = u +" " + args[i];
+            }
+            for(var i=kp+1; i<args.length;i++)
+            {
+                k = k +" " + args[i];
+            }
+           
+            message.channel.sendMessage(p);
             message.channel.sendMessage(z);
             message.channel.sendMessage(o);
             message.channel.sendMessage(l);
             message.channel.sendMessage(u);
             message.channel.sendMessage(k);
-            var exampleEmbed = new Discord.RichEmbed()
+            /*var exampleEmbed = new Discord.RichEmbed()
             .setColor('#A40000')
             .setTitle('Typ akcji:  '+ p)
             .setDescription(` ** Zgłaszający: ** ${z} \n ** Opis zdarzenia: **  ${o}  `)
